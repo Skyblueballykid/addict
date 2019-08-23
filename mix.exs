@@ -3,8 +3,8 @@ defmodule Addict.Mixfile do
 
   def project do
     [app: :addict,
-     version: "0.3.0",
-     elixir: "~> 1.2",
+     version: "0.3.1",
+     elixir: "~> 1.5",
      description: description,
      package: package,
      docs: &docs/0,
@@ -24,7 +24,7 @@ defmodule Addict.Mixfile do
   end
 
   defp deps do
-    [{:cowboy, "~> 1.0"},
+    [{:cowboy, "~> 20"},
      {:ecto, "~> 3.0"},
      {:phoenix_ecto, "~> 4.0"},
      {:ecto_sql, "~> 3.0"},
@@ -43,7 +43,7 @@ defmodule Addict.Mixfile do
          contributors: ["Nizar Venturini"],
          maintainers: ["Nizar Venturini"],
          licenses: ["MIT"],
-         links: %{"GitHub" => "https://github.com/trenpixster/addict"}
+         links: %{"GitHub" => "https://github.com/Skyblueballykid/addict"}
     ]
   end
 
