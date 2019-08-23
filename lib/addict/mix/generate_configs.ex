@@ -71,6 +71,8 @@ defmodule Mix.Tasks.Addict.Generate.Configs do
     IO.read(file, :all)
     # secret_key = Base.gensalt_nif |> Base.encode16 |> String.downcase
 
+
+    '''
     default_configs = """
     config :addict,
       secret_key: "#{secret_key}",
@@ -86,6 +88,7 @@ defmodule Mix.Tasks.Addict.Generate.Configs do
         mailgun_key: "#{mailgun_api_key}",
         mail_service: :mailgun
       """
+     '''
     else
       default_configs <> "mail_service: nil"
     end
